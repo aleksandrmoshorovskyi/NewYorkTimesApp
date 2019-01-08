@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SharedModel.h"
+#import "NewsEntry+CoreDataClass.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SharedDetailedController : UIViewController
+
+@property (nonatomic, strong) SharedModel *model;
+
+@property (nonatomic, strong) NewsEntry *newsEntry;
 
 @end
 

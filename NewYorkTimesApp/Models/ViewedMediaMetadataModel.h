@@ -1,5 +1,5 @@
 //
-//  ViewedMediaMetedataModel.h
+//  ViewedMediaMetadataModel.h
 //  NewYorkTimesApp
 //
 //  Created by Aleksandr Moroshovskyi on 1/8/19.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol ViewedMediaMetedataModel;
+@protocol ViewedMediaMetadataModel;
 
 @interface ViewedMediaMetadataModel : JSONModel
 

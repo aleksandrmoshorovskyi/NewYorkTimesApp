@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NewsEntry+CoreDataClass.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FavoritesCell : UITableViewCell
+
+@property (nonatomic, weak) IBOutlet UILabel *title;
+
+@property (nonatomic, strong) NewsEntry *model;
 
 @end
 

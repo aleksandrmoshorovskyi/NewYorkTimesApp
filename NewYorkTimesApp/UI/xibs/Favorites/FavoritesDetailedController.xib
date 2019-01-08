@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoritesDetailedController">
+            <connections>
+                <outlet property="newsImage" destination="HqX-JD-qk8" id="aRR-zw-c1E"/>
+                <outlet property="textLable" destination="a72-vk-JXf" id="jbX-ZU-SPd"/>
+                <outlet property="titleLable" destination="Kod-78-qGC" id="Klr-hy-gle"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kod-78-qGC">
+                    <rect key="frame" x="16" y="50" width="343" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmR-lt-vcg">
+                    <rect key="frame" x="16" y="617" width="343" height="30"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                    <state key="normal" title="Remove from favorites"/>
+                    <connections>
+                        <action selector="deleteButtonClicked:" destination="-1" eventType="touchUpInside" id="nA2-10-1QJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a72-vk-JXf">
+                    <rect key="frame" x="16" y="86.5" width="343" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HqX-JD-qk8">
+                    <rect key="frame" x="16" y="123" width="343" height="478"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="a72-vk-JXf" firstAttribute="trailing" secondItem="Kod-78-qGC" secondAttribute="trailing" id="1kl-Wj-dag"/>
+                <constraint firstItem="HqX-JD-qk8" firstAttribute="trailing" secondItem="a72-vk-JXf" secondAttribute="trailing" id="4Pd-YX-Vlf"/>
+                <constraint firstItem="a72-vk-JXf" firstAttribute="leading" secondItem="Kod-78-qGC" secondAttribute="leading" id="6Ar-zF-fkI"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="HmR-lt-vcg" secondAttribute="bottom" constant="20" id="AOE-dW-L7N"/>
+                <constraint firstItem="HqX-JD-qk8" firstAttribute="leading" secondItem="a72-vk-JXf" secondAttribute="leading" id="COR-sd-6V9"/>
+                <constraint firstItem="a72-vk-JXf" firstAttribute="top" secondItem="Kod-78-qGC" secondAttribute="bottom" constant="16" id="JAd-9C-u1L"/>
+                <constraint firstItem="Kod-78-qGC" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="Lcs-Nk-3DB"/>
+                <constraint firstItem="HmR-lt-vcg" firstAttribute="trailing" secondItem="HqX-JD-qk8" secondAttribute="trailing" id="PND-AV-Z3e"/>
+                <constraint firstItem="HqX-JD-qk8" firstAttribute="top" secondItem="a72-vk-JXf" secondAttribute="bottom" constant="16" id="TQE-AA-Vgg"/>
+                <constraint firstItem="Kod-78-qGC" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="TxN-3g-apT"/>
+                <constraint firstItem="Kod-78-qGC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fU9-Xf-zdc"/>
+                <constraint firstItem="HmR-lt-vcg" firstAttribute="leading" secondItem="HqX-JD-qk8" secondAttribute="leading" id="lX6-zo-GPi"/>
+                <constraint firstItem="HmR-lt-vcg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="HqX-JD-qk8" secondAttribute="bottom" constant="16" id="obb-sl-TZZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

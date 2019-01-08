@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NewsEntry+CoreDataClass.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FavoritesDetailedController : UIViewController
+
+@property (nonatomic, strong) NewsEntry *model;
 
 @end
 

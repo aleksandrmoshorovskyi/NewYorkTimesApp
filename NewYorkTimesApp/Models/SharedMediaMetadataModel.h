@@ -7,10 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <JSONModel/JSONModel.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SharedMediaMetadataModel : NSObject
+@protocol SharedMediaMetadataModel;
+
+@interface SharedMediaMetadataModel : JSONModel
+
+@property (nonatomic, strong) NSString <Optional> *url;
+@property (nonatomic, strong) NSString <Optional> *format;
+@property (nonatomic, assign) NSInteger height;
+@property (nonatomic, assign) NSInteger width;
 
 @end
 

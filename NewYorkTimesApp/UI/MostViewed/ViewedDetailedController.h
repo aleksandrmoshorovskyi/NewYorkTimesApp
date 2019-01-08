@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewedModel.h"
+#import "NewsEntry+CoreDataClass.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ViewedDetailedController : UIViewController
+
+@property (nonatomic, strong) ViewedModel *model;
+
+@property (nonatomic, strong) NewsEntry *newsEntry;
 
 @end
 

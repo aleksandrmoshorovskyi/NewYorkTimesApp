@@ -1,5 +1,5 @@
 //
-//  MostEmailedCell.h
+//  EmailedCell.h
 //  NewYorkTimesApp
 //
 //  Created by Aleksandr Moroshovskyi on 1/6/19.
@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EmailedModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) IBOutlet UILabel *title;
 
-@property (nonatomic, strong) MostEmailedModel *model;
+@property (nonatomic, strong) EmailedModel *model;
 
 @end
 

@@ -7,10 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <JSONModel/JSONModel.h>
+#import "ViewedMediaMetadataModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ViewedMediaModel : NSObject
+@protocol ViewedMediaModel;
+
+@interface ViewedMediaModel : JSONModel
+
+@property (nonatomic, strong) NSString <Optional> *type;
+@property (nonatomic, strong) NSString <Optional> *subtype;
+@property (nonatomic, strong) NSString <Optional> *caption;
+@property (nonatomic, strong) NSString <Optional> *copyright;
+@property (nonatomic, strong) NSString <Optional> *approvedForSyndication;
+@property (nonatomic, strong) NSArray <ViewedMediaMetadataModel> *mediaMetadata;
 
 @end
 

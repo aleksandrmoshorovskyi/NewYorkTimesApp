@@ -7,8 +7,19 @@
 //
 
 #import "ViewedDetailedController.h"
+#import "DataManager.h"
+#import "AFNetworking.h"
+#import "UIImageView+AFNetworking.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
-@interface ViewedDetailedController ()
+@interface ViewedDetailedController () {
+    IBOutlet UIButton *saveButton;
+    IBOutlet UIImageView *newsImage;
+    NSArray *result;
+}
+
+@property (nonatomic, weak) IBOutlet UILabel *titleLable;
+@property (nonatomic, weak) IBOutlet UILabel *textLable;
 
 @end
 
@@ -16,17 +27,60 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.titleLable.text = self.model.title;
+    self.textLable.text = self.model.abstract;
+    
+    ViewedMediaModel *media = self.model.media[0];
+    ViewedMediaMetadataModel *mediaURl = media.mediaMetadata[3];
+    
+//    [newsImage setImageWithURL:[NSURL URLWithString:mediaURl.url]];
+    [newsImage sd_setImageWithURL:[NSURL URLWithString:mediaURl.url]];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    return self;
 }
-*/
+
+- (void)setButtonTitle {
+    result = [[DataManager sharedInstance] fetchNoteWithURL:self.model.url];
+    
+    if (result.firstObject) {
+        saveButton.selected = YES;
+        [saveButton setTitle:@"It's favorite" forState:UIControlStateNormal];
+    } else {
+        saveButton.selected = NO;
+        [saveButton setTitle:@"Add to favorites" forState:UIControlStateNormal];
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self setButtonTitle];
+}
+
+#pragma mark - Actions
+
+- (IBAction)saveButtonClicked:(id)sender {
+    
+    if (!result.firstObject) {
+        self.newsEntry = [[NewsEntry alloc] initWithContext:[DataManager sharedInstance].container.viewContext];
+        self.newsEntry.url = self.model.url;
+        self.newsEntry.title = self.model.title;
+        self.newsEntry.abstract = self.model.abstract;
+        
+        NSData *dataImage = UIImageJPEGRepresentation(newsImage.image, 1.0);
+        self.newsEntry.image = dataImage;
+        
+        [[DataManager sharedInstance] save];
+        [self setButtonTitle];
+    } else {
+        [[DataManager sharedInstance].container.viewContext deleteObject:result.firstObject];
+        [[DataManager sharedInstance] save];
+        [self setButtonTitle];
+    }
+    
+}
 
 @end

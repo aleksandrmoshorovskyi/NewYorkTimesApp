@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  NewYorkTimesApp
 //
-//  Created by Aleksandr Moroshovskyi on 1/6/19.
+//  Created by Aleksandr Moroshovskyi on 1/5/19.
 //  Copyright © 2019 Aleksandr Moroshovskyi. All rights reserved.
 //
 

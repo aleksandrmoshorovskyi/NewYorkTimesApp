@@ -1,5 +1,5 @@
 //
-//  MostEmailedDetailedController.h
+//  EmailedDetailedController.h
 //  NewYorkTimesApp
 //
 //  Created by Aleksandr Moroshovskyi on 1/6/19.
@@ -7,28 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EmailedModel.h"
+#import "NewsEntry+CoreDataClass.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface EmailedDetailedController : UIViewController
 
+@property (nonatomic, strong) EmailedModel *model;
+
+@property (nonatomic, strong) NewsEntry *newsEntry;
+
 @end
 
 NS_ASSUME_NONNULL_END
-
-/*
- #import "EmailedModel.h"
- #import "DataManager.h"
- 
- NS_ASSUME_NONNULL_BEGIN
- 
- @interface DetailedViewController : UIViewController
- 
- //@property (nonatomic, weak) IBOutlet UILabel *title;
- 
- @property (nonatomic, strong) EmailedModel *model;
- 
- @property (nonatomic, strong) News *news;
- 
- @end
-*/

@@ -7,8 +7,14 @@
 //
 
 #import "FavoritesDetailedController.h"
+#import "DataManager.h"
 
-@interface FavoritesDetailedController ()
+@interface FavoritesDetailedController () {
+    IBOutlet UIImageView *newsImage;
+}
+
+@property (nonatomic, weak) IBOutlet UILabel *titleLable;
+@property (nonatomic, weak) IBOutlet UILabel *textLable;
 
 @end
 
@@ -16,17 +22,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    [self updateViewConstraints];
 }
 
-/*
-#pragma mark - Navigation
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if (self.model.url) {
+        self.titleLable.text = self.model.title;
+        self.textLable.text = self.model.abstract;
+        
+        newsImage.image = [UIImage imageWithData:self.model.image];
+    } else {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
+    
+    [self updateViewConstraints];
 }
-*/
+
+#pragma mark - Actions
+
+- (IBAction)deleteButtonClicked:(id)sender {
+    [[DataManager sharedInstance].container.viewContext deleteObject:self.model];
+    [[DataManager sharedInstance] save];
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 @end

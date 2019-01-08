@@ -12,15 +12,32 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewedListController">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="tableView" destination="e3N-Od-hby" id="CXE-gV-PJR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="ruV-E5-lIz"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="0.45374398370000002" green="1" blue="0.646107125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e3N-Od-hby">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="HgF-5c-MF8"/>
+                        <outlet property="delegate" destination="-1" id="Z8N-JH-6WM"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="e3N-Od-hby" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="6ky-r0-Wmo"/>
+                <constraint firstAttribute="bottomMargin" secondItem="e3N-Od-hby" secondAttribute="bottom" id="Fzv-rU-Oxh"/>
+                <constraint firstItem="e3N-Od-hby" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Ofb-QB-qiJ"/>
+                <constraint firstItem="e3N-Od-hby" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="fgZ-DQ-Acq"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="53.600000000000001" y="59.820089955022496"/>
         </view>
     </objects>
 </document>

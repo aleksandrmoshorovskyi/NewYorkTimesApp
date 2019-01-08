@@ -7,7 +7,6 @@
 //
 
 #import "TabBarController.h"
-//#import "ViewController.h"
 
 @interface TabBarController ()
 
@@ -18,29 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIViewController *vc1 = [FavoritesListController new];
-    //UIViewController *vc2 = [FavoritesListController new];
-    // создаем ViewController1 программно используя метод nib-файл
-    MostEmailedListController *vc2 = [[MostEmailedListController alloc] initWithNibName:@"MostEmailedListController" bundle:nil];
-    // отобразим данный контроллер
-    //[self.navigationController pushViewController:viewController2 animated:YES];
-    UIViewController *vc3 = [FavoritesListController new];
-    UIViewController *vc4 = [FavoritesListController new];
+    FavoritesListController *vc1 = [[FavoritesListController alloc] initWithNibName:@"FavoritesListController" bundle:nil];
+    EmailedListController *vc2 = [[EmailedListController alloc] initWithNibName:@"EmailedListController" bundle:nil];
+    SharedListController *vc3 = [[SharedListController alloc] initWithNibName:@"SharedListController" bundle:nil];
+    ViewedListController *vc4 = [[ViewedListController alloc] initWithNibName:@"ViewedListController" bundle:nil];
     
-    vc1.title = @"VC1";
-    vc2.title = @"VC2";
-    vc3.title = @"VC3";
-    vc4.title = @"VC4";
+    vc1.title = @"Favorites";
+    vc2.title = @"Most Emailed";
+    vc3.title = @"Most Shared";
+    vc4.title = @"Most Viewed";
     
-    // cоздаем программно tabBarItem
-    // 1. используем системный айтем
     vc1.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:0];
-    vc2.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemBookmarks tag:0];
-    vc3.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemBookmarks tag:0];
-    vc4.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemBookmarks tag:0];
-    // 2. исмользуем custom item
-    //vc3.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Trainings" image:[UIImage imageNamed:@"tab2"] tag:0];
-    //vc4.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Map" image:[UIImage imageNamed:@"tab3"] selectedImage:[UIImage imageNamed:@"tab3Activ"]];
+    vc2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Most Emailed" image:[UIImage imageNamed:@"infonewsicon"] selectedImage:[UIImage imageNamed:@"infonewsicon"]];
+    vc3.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Most Shared" image:[UIImage imageNamed:@"infonewsicon"] selectedImage:[UIImage imageNamed:@"infonewsicon"]];
+    vc4.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Most Viewed" image:[UIImage imageNamed:@"infonewsicon"] selectedImage:[UIImage imageNamed:@"infonewsicon"]];
     
     UINavigationController *nvc1 = [[UINavigationController alloc] initWithRootViewController:vc1];
     UINavigationController *nvc2 = [[UINavigationController alloc] initWithRootViewController:vc2];
@@ -48,34 +38,10 @@
     UINavigationController *nvc4 = [[UINavigationController alloc] initWithRootViewController:vc4];
     
     self.viewControllers = @[nvc1, nvc2, nvc3, nvc4];
-    
-    // меняем цвета на таббаре
-    //    self.tabBar.tintColor = [UIColor greenColor]; // - выделеного елемента
-    //    self.tabBar.barTintColor = [UIColor yellowColor]; // - background
-    //    self.tabBar.unselectedItemTintColor = [UIColor magentaColor];
-    //
-    //    UIImage *img = [TabBarController imageFromColor:[UIColor blackColor]];
-    //    UIImage *resizeImg = [TabBarController resizeImage:img];
-    //
-    //    self.tabBar.selectionIndicatorImage = resizeImg;
 }
 
-+ (UIImage *)imageFromColor:(UIColor *)color {
-    CGRect rect = CGRectMake(0, 0, 1, 1);
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextFillRect(context, rect);
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return image;
-}
-
-+ (UIImage *)resizeImage:(UIImage *)img {
-    return [img resizableImageWithCapInsets:UIEdgeInsetsMake(img.size.height/2,
-                                                             img.size.width/2,
-                                                             img.size.height/2 - 1,
-                                                             img.size.width/2 - 1)];
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
 }
 
 @end

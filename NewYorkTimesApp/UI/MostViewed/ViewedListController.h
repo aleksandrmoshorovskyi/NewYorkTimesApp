@@ -1,5 +1,5 @@
 //
-//  ViewedController.h
+//  ViewedListController.h
 //  NewYorkTimesApp
 //
 //  Created by Aleksandr Moroshovskyi on 1/7/19.

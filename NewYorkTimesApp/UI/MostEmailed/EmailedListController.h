@@ -1,5 +1,5 @@
 //
-//  MostEmailedListController.h
+//  EmailedListController.h
 //  NewYorkTimesApp
 //
 //  Created by Aleksandr Moroshovskyi on 1/6/19.

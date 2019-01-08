@@ -1,5 +1,5 @@
 //
-//  SharedController.h
+//  SharedListController.h
 //  NewYorkTimesApp
 //
 //  Created by Aleksandr Moroshovskyi on 1/6/19.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SharedController : UIViewController
+@interface SharedListController : UIViewController
 
 @end
 

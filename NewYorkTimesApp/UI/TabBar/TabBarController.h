@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "FavoritesListController.h"
-#import "MostEmailedListController.h"
+#import "EmailedListController.h"
+#import "SharedListController.h"
+#import "ViewedListController.h"
 
 @interface TabBarController : UITabBarController
 

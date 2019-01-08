@@ -7,10 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <JSONModel/JSONModel.h>
+#import "Constants.h"
+#import "AFNetworking.h"
+#import "SharedMediaModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SharedModel : NSObject
+@interface SharedModel : JSONModel
+
+@property (nonatomic, strong) NSString <Optional> *url;
+@property (nonatomic, strong) NSString <Optional> *countType;
+@property (nonatomic, strong) NSString <Optional> *column;
+@property (nonatomic, strong) NSString <Optional> *section;
+@property (nonatomic, strong) NSString <Optional> *byline;
+@property (nonatomic, strong) NSString <Optional> *title;
+@property (nonatomic, strong) NSString <Optional> *abstract;
+@property (nonatomic, strong) NSString <Optional> *publishedDate;
+@property (nonatomic, strong) NSString <Optional> *source;
+@property (nonatomic, strong) NSArray <SharedMediaModel> *media;
+
++ (NSURLSessionDataTask *)loadDataWithComplitionBlock:(URLComplitionBlock)complitionBlock;
 
 @end
 

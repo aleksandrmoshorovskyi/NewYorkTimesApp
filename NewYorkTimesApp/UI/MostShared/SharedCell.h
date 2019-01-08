@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SharedModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SharedCell : UITableViewCell
+
+@property (nonatomic, weak) IBOutlet UILabel *title;
+
+@property (nonatomic, strong) SharedModel *model;
 
 @end
 

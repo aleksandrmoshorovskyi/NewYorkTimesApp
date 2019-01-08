@@ -7,27 +7,128 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A52D0CC21E384E4009ACAC6 /* ViewedListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52D0CA21E384E4009ACAC6 /* ViewedListController.m */; };
+		0A52D0CD21E384E4009ACAC6 /* ViewedListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A52D0CB21E384E4009ACAC6 /* ViewedListController.xib */; };
+		0A52D0D121E38610009ACAC6 /* ViewedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52D0CF21E38610009ACAC6 /* ViewedCell.m */; };
+		0A52D0D221E38610009ACAC6 /* ViewedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A52D0D021E38610009ACAC6 /* ViewedCell.xib */; };
+		0A52D0D521E387B9009ACAC6 /* ViewedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52D0D421E387B8009ACAC6 /* ViewedModel.m */; };
+		0A52D0D921E38835009ACAC6 /* ViewedDetailedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52D0D721E38835009ACAC6 /* ViewedDetailedController.m */; };
+		0A52D0DA21E38835009ACAC6 /* ViewedDetailedController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A52D0D821E38835009ACAC6 /* ViewedDetailedController.xib */; };
+		0A52D0DD21E3A8FA009ACAC6 /* SharedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52D0DC21E3A8FA009ACAC6 /* SharedModel.m */; };
+		0A52D0E121E3AA19009ACAC6 /* SharedDetailedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52D0DF21E3AA19009ACAC6 /* SharedDetailedController.m */; };
+		0A52D0E221E3AA19009ACAC6 /* SharedDetailedController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A52D0E021E3AA19009ACAC6 /* SharedDetailedController.xib */; };
+		0A52D0E621E3AC7A009ACAC6 /* FavoritesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52D0E421E3AC7A009ACAC6 /* FavoritesCell.m */; };
+		0A52D0E721E3AC7A009ACAC6 /* FavoritesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A52D0E521E3AC7A009ACAC6 /* FavoritesCell.xib */; };
+		0A52D0EB21E3ACA2009ACAC6 /* FavoritesDetailedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52D0E921E3ACA2009ACAC6 /* FavoritesDetailedController.m */; };
+		0A52D0EC21E3ACA2009ACAC6 /* FavoritesDetailedController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A52D0EA21E3ACA2009ACAC6 /* FavoritesDetailedController.xib */; };
+		0A52D0F121E3B1B4009ACAC6 /* NewsEntry+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52D0EF21E3B1B4009ACAC6 /* NewsEntry+CoreDataClass.m */; };
+		0A52D0F221E3B1B4009ACAC6 /* NewsEntry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52D0F021E3B1B4009ACAC6 /* NewsEntry+CoreDataProperties.m */; };
+		0A52D0F521E3B1D0009ACAC6 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52D0F421E3B1D0009ACAC6 /* DataManager.m */; };
 		0A532BBC21E204F900567552 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A532BBB21E204F900567552 /* AppDelegate.m */; };
-		0A532BBF21E204F900567552 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A532BBE21E204F900567552 /* ViewController.m */; };
+		0A532BBF21E204F900567552 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A532BBE21E204F900567552 /* TabBarController.m */; };
 		0A532BC221E204F900567552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A532BC021E204F900567552 /* Main.storyboard */; };
-		0A532BC521E204F900567552 /* NewYorkTimesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A532BC321E204F900567552 /* NewYorkTimesApp.xcdatamodeld */; };
+		0A532BC521E204F900567552 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A532BC321E204F900567552 /* DataModel.xcdatamodeld */; };
 		0A532BC721E204FA00567552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A532BC621E204FA00567552 /* Assets.xcassets */; };
 		0A532BCA21E204FA00567552 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A532BC821E204FA00567552 /* LaunchScreen.storyboard */; };
 		0A532BCD21E204FA00567552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A532BCC21E204FA00567552 /* main.m */; };
+		0A532BD821E2081C00567552 /* FavoritesListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A532BD621E2081C00567552 /* FavoritesListController.m */; };
+		0A532BD921E2081C00567552 /* FavoritesListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A532BD721E2081C00567552 /* FavoritesListController.xib */; };
+		0A532BDD21E2086F00567552 /* EmailedListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A532BDB21E2086F00567552 /* EmailedListController.m */; };
+		0A532BDE21E2086F00567552 /* EmailedListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A532BDC21E2086F00567552 /* EmailedListController.xib */; };
+		0A532BEA21E2113400567552 /* EmailedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A532BE821E2113400567552 /* EmailedCell.m */; };
+		0A532BEB21E2113400567552 /* EmailedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A532BE921E2113400567552 /* EmailedCell.xib */; };
+		0A532BEE21E211C400567552 /* EmailedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A532BED21E211C400567552 /* EmailedModel.m */; };
+		0A532BF221E2128600567552 /* EmailedDetailedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A532BF021E2128600567552 /* EmailedDetailedController.m */; };
+		0A532BF321E2128600567552 /* EmailedDetailedController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A532BF121E2128600567552 /* EmailedDetailedController.xib */; };
+		0A532BF821E2203500567552 /* SharedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A532BF621E2203500567552 /* SharedCell.m */; };
+		0A532BF921E2203500567552 /* SharedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A532BF721E2203500567552 /* SharedCell.xib */; };
+		0A532BFD21E2226B00567552 /* SharedListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A532BFB21E2226B00567552 /* SharedListController.m */; };
+		0A532BFE21E2226B00567552 /* SharedListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A532BFC21E2226B00567552 /* SharedListController.xib */; };
+		0A532C0821E2539900567552 /* EmailedMediaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A532C0721E2539900567552 /* EmailedMediaModel.m */; };
+		0A7B202021E48CCC0023CC09 /* EmailedMediaMetadataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B201F21E48CCC0023CC09 /* EmailedMediaMetadataModel.m */; };
+		0A7B202A21E4CDCF0023CC09 /* ViewedMediaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B202921E4CDCF0023CC09 /* ViewedMediaModel.m */; };
+		0A7B202D21E4CECB0023CC09 /* ViewedMediaMetadataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B202C21E4CECB0023CC09 /* ViewedMediaMetadataModel.m */; };
+		0A7B203021E4D0AD0023CC09 /* SharedMediaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B202F21E4D0AD0023CC09 /* SharedMediaModel.m */; };
+		0A7B203321E4D0DA0023CC09 /* SharedMediaMetadataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B203221E4D0DA0023CC09 /* SharedMediaMetadataModel.m */; };
+		D77421C3B8E930676618C27F /* libPods-NewYorkTimesApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA531210F1506807C7F1797 /* libPods-NewYorkTimesApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A52D0C921E384E4009ACAC6 /* ViewedListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewedListController.h; sourceTree = "<group>"; };
+		0A52D0CA21E384E4009ACAC6 /* ViewedListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewedListController.m; sourceTree = "<group>"; };
+		0A52D0CB21E384E4009ACAC6 /* ViewedListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewedListController.xib; sourceTree = "<group>"; };
+		0A52D0CE21E38610009ACAC6 /* ViewedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewedCell.h; sourceTree = "<group>"; };
+		0A52D0CF21E38610009ACAC6 /* ViewedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewedCell.m; sourceTree = "<group>"; };
+		0A52D0D021E38610009ACAC6 /* ViewedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewedCell.xib; sourceTree = "<group>"; };
+		0A52D0D321E387B8009ACAC6 /* ViewedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewedModel.h; sourceTree = "<group>"; };
+		0A52D0D421E387B8009ACAC6 /* ViewedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewedModel.m; sourceTree = "<group>"; };
+		0A52D0D621E38835009ACAC6 /* ViewedDetailedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewedDetailedController.h; sourceTree = "<group>"; };
+		0A52D0D721E38835009ACAC6 /* ViewedDetailedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewedDetailedController.m; sourceTree = "<group>"; };
+		0A52D0D821E38835009ACAC6 /* ViewedDetailedController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewedDetailedController.xib; sourceTree = "<group>"; };
+		0A52D0DB21E3A8FA009ACAC6 /* SharedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedModel.h; sourceTree = "<group>"; };
+		0A52D0DC21E3A8FA009ACAC6 /* SharedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedModel.m; sourceTree = "<group>"; };
+		0A52D0DE21E3AA19009ACAC6 /* SharedDetailedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedDetailedController.h; sourceTree = "<group>"; };
+		0A52D0DF21E3AA19009ACAC6 /* SharedDetailedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedDetailedController.m; sourceTree = "<group>"; };
+		0A52D0E021E3AA19009ACAC6 /* SharedDetailedController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SharedDetailedController.xib; sourceTree = "<group>"; };
+		0A52D0E321E3AC7A009ACAC6 /* FavoritesCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoritesCell.h; sourceTree = "<group>"; };
+		0A52D0E421E3AC7A009ACAC6 /* FavoritesCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritesCell.m; sourceTree = "<group>"; };
+		0A52D0E521E3AC7A009ACAC6 /* FavoritesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesCell.xib; sourceTree = "<group>"; };
+		0A52D0E821E3ACA2009ACAC6 /* FavoritesDetailedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoritesDetailedController.h; sourceTree = "<group>"; };
+		0A52D0E921E3ACA2009ACAC6 /* FavoritesDetailedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritesDetailedController.m; sourceTree = "<group>"; };
+		0A52D0EA21E3ACA2009ACAC6 /* FavoritesDetailedController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesDetailedController.xib; sourceTree = "<group>"; };
+		0A52D0ED21E3B1B4009ACAC6 /* NewsEntry+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewsEntry+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0A52D0EE21E3B1B4009ACAC6 /* NewsEntry+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewsEntry+CoreDataClass.h"; sourceTree = "<group>"; };
+		0A52D0EF21E3B1B4009ACAC6 /* NewsEntry+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NewsEntry+CoreDataClass.m"; sourceTree = "<group>"; };
+		0A52D0F021E3B1B4009ACAC6 /* NewsEntry+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NewsEntry+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0A52D0F321E3B1D0009ACAC6 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		0A52D0F421E3B1D0009ACAC6 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		0A532BB721E204F900567552 /* NewYorkTimesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewYorkTimesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A532BBA21E204F900567552 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A532BBB21E204F900567552 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0A532BBD21E204F900567552 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0A532BBE21E204F900567552 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A532BBD21E204F900567552 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		0A532BBE21E204F900567552 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		0A532BC121E204F900567552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A532BC421E204F900567552 /* NewYorkTimesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewYorkTimesApp.xcdatamodel; sourceTree = "<group>"; };
 		0A532BC621E204FA00567552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A532BC921E204FA00567552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A532BCB21E204FA00567552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A532BCC21E204FA00567552 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A532BD521E2081B00567552 /* FavoritesListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoritesListController.h; sourceTree = "<group>"; };
+		0A532BD621E2081C00567552 /* FavoritesListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritesListController.m; sourceTree = "<group>"; };
+		0A532BD721E2081C00567552 /* FavoritesListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesListController.xib; sourceTree = "<group>"; };
+		0A532BDA21E2086F00567552 /* EmailedListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailedListController.h; sourceTree = "<group>"; };
+		0A532BDB21E2086F00567552 /* EmailedListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailedListController.m; sourceTree = "<group>"; };
+		0A532BDC21E2086F00567552 /* EmailedListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailedListController.xib; sourceTree = "<group>"; };
+		0A532BDF21E2098900567552 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		0A532BE721E2113400567552 /* EmailedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailedCell.h; sourceTree = "<group>"; };
+		0A532BE821E2113400567552 /* EmailedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailedCell.m; sourceTree = "<group>"; };
+		0A532BE921E2113400567552 /* EmailedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailedCell.xib; sourceTree = "<group>"; };
+		0A532BEC21E211C400567552 /* EmailedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailedModel.h; sourceTree = "<group>"; };
+		0A532BED21E211C400567552 /* EmailedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailedModel.m; sourceTree = "<group>"; };
+		0A532BEF21E2128600567552 /* EmailedDetailedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailedDetailedController.h; sourceTree = "<group>"; };
+		0A532BF021E2128600567552 /* EmailedDetailedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailedDetailedController.m; sourceTree = "<group>"; };
+		0A532BF121E2128600567552 /* EmailedDetailedController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailedDetailedController.xib; sourceTree = "<group>"; };
+		0A532BF521E2203500567552 /* SharedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedCell.h; sourceTree = "<group>"; };
+		0A532BF621E2203500567552 /* SharedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedCell.m; sourceTree = "<group>"; };
+		0A532BF721E2203500567552 /* SharedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SharedCell.xib; sourceTree = "<group>"; };
+		0A532BFA21E2226B00567552 /* SharedListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedListController.h; sourceTree = "<group>"; };
+		0A532BFB21E2226B00567552 /* SharedListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedListController.m; sourceTree = "<group>"; };
+		0A532BFC21E2226B00567552 /* SharedListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SharedListController.xib; sourceTree = "<group>"; };
+		0A532C0621E2539900567552 /* EmailedMediaModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailedMediaModel.h; sourceTree = "<group>"; };
+		0A532C0721E2539900567552 /* EmailedMediaModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailedMediaModel.m; sourceTree = "<group>"; };
+		0A7B201E21E48CCC0023CC09 /* EmailedMediaMetadataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailedMediaMetadataModel.h; sourceTree = "<group>"; };
+		0A7B201F21E48CCC0023CC09 /* EmailedMediaMetadataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailedMediaMetadataModel.m; sourceTree = "<group>"; };
+		0A7B202821E4CDCF0023CC09 /* ViewedMediaModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewedMediaModel.h; sourceTree = "<group>"; };
+		0A7B202921E4CDCF0023CC09 /* ViewedMediaModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewedMediaModel.m; sourceTree = "<group>"; };
+		0A7B202B21E4CECB0023CC09 /* ViewedMediaMetadataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewedMediaMetadataModel.h; sourceTree = "<group>"; };
+		0A7B202C21E4CECB0023CC09 /* ViewedMediaMetadataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewedMediaMetadataModel.m; sourceTree = "<group>"; };
+		0A7B202E21E4D0AD0023CC09 /* SharedMediaModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedMediaModel.h; sourceTree = "<group>"; };
+		0A7B202F21E4D0AD0023CC09 /* SharedMediaModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedMediaModel.m; sourceTree = "<group>"; };
+		0A7B203121E4D0DA0023CC09 /* SharedMediaMetadataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedMediaMetadataModel.h; sourceTree = "<group>"; };
+		0A7B203221E4D0DA0023CC09 /* SharedMediaMetadataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedMediaMetadataModel.m; sourceTree = "<group>"; };
+		110A26F23C75321E54CD65D3 /* Pods-NewYorkTimesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewYorkTimesApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewYorkTimesApp/Pods-NewYorkTimesApp.release.xcconfig"; sourceTree = "<group>"; };
+		4DA531210F1506807C7F1797 /* libPods-NewYorkTimesApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewYorkTimesApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7659C32CE214DE99F96BE7B /* Pods-NewYorkTimesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewYorkTimesApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewYorkTimesApp/Pods-NewYorkTimesApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +136,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77421C3B8E930676618C27F /* libPods-NewYorkTimesApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A52D0C821E3840D009ACAC6 /* MostViewed */ = {
+			isa = PBXGroup;
+			children = (
+				0A52D0C921E384E4009ACAC6 /* ViewedListController.h */,
+				0A52D0CA21E384E4009ACAC6 /* ViewedListController.m */,
+				0A52D0CE21E38610009ACAC6 /* ViewedCell.h */,
+				0A52D0CF21E38610009ACAC6 /* ViewedCell.m */,
+				0A52D0D621E38835009ACAC6 /* ViewedDetailedController.h */,
+				0A52D0D721E38835009ACAC6 /* ViewedDetailedController.m */,
+			);
+			path = MostViewed;
+			sourceTree = "<group>";
+		};
 		0A532BAE21E204F900567552 = {
 			isa = PBXGroup;
 			children = (
 				0A532BB921E204F900567552 /* NewYorkTimesApp */,
 				0A532BB821E204F900567552 /* Products */,
+				CA2D1A45445FA11364849877 /* Pods */,
+				88BD329A7A70F019A340D0EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,16 +179,201 @@
 			children = (
 				0A532BBA21E204F900567552 /* AppDelegate.h */,
 				0A532BBB21E204F900567552 /* AppDelegate.m */,
-				0A532BBD21E204F900567552 /* ViewController.h */,
-				0A532BBE21E204F900567552 /* ViewController.m */,
-				0A532BC021E204F900567552 /* Main.storyboard */,
+				0A532BE421E20E3F00567552 /* Helpers */,
+				0A532BD321E2073F00567552 /* CoreData */,
+				0A532BE621E20EF800567552 /* Models */,
+				0A532BD421E2075400567552 /* UI */,
 				0A532BC621E204FA00567552 /* Assets.xcassets */,
-				0A532BC821E204FA00567552 /* LaunchScreen.storyboard */,
 				0A532BCB21E204FA00567552 /* Info.plist */,
 				0A532BCC21E204FA00567552 /* main.m */,
-				0A532BC321E204F900567552 /* NewYorkTimesApp.xcdatamodeld */,
 			);
 			path = NewYorkTimesApp;
+			sourceTree = "<group>";
+		};
+		0A532BD321E2073F00567552 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0A52D0ED21E3B1B4009ACAC6 /* NewsEntry+CoreDataProperties.h */,
+				0A52D0F021E3B1B4009ACAC6 /* NewsEntry+CoreDataProperties.m */,
+				0A52D0EE21E3B1B4009ACAC6 /* NewsEntry+CoreDataClass.h */,
+				0A52D0EF21E3B1B4009ACAC6 /* NewsEntry+CoreDataClass.m */,
+				0A52D0F321E3B1D0009ACAC6 /* DataManager.h */,
+				0A52D0F421E3B1D0009ACAC6 /* DataManager.m */,
+				0A532BC321E204F900567552 /* DataModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		0A532BD421E2075400567552 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0A532BE321E20DD700567552 /* TabBar */,
+				0A532BE021E20D4500567552 /* Favorites */,
+				0A532BE221E20DA200567552 /* MostEmailed */,
+				0A532BF421E21FEB00567552 /* MostShared */,
+				0A52D0C821E3840D009ACAC6 /* MostViewed */,
+				0A532BE121E20D7200567552 /* xibs */,
+				0A532BE521E20E5C00567552 /* Storyboards */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0A532BE021E20D4500567552 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				0A532BD521E2081B00567552 /* FavoritesListController.h */,
+				0A532BD621E2081C00567552 /* FavoritesListController.m */,
+				0A52D0E321E3AC7A009ACAC6 /* FavoritesCell.h */,
+				0A52D0E421E3AC7A009ACAC6 /* FavoritesCell.m */,
+				0A52D0E821E3ACA2009ACAC6 /* FavoritesDetailedController.h */,
+				0A52D0E921E3ACA2009ACAC6 /* FavoritesDetailedController.m */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		0A532BE121E20D7200567552 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				0A532BFF21E22AF400567552 /* Favorites */,
+				0A532C0021E22B0F00567552 /* Emailed */,
+				0A532C0121E22B2200567552 /* Shared */,
+				0A532C0221E22B3500567552 /* Viewed */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		0A532BE221E20DA200567552 /* MostEmailed */ = {
+			isa = PBXGroup;
+			children = (
+				0A532BDA21E2086F00567552 /* EmailedListController.h */,
+				0A532BDB21E2086F00567552 /* EmailedListController.m */,
+				0A532BE721E2113400567552 /* EmailedCell.h */,
+				0A532BE821E2113400567552 /* EmailedCell.m */,
+				0A532BEF21E2128600567552 /* EmailedDetailedController.h */,
+				0A532BF021E2128600567552 /* EmailedDetailedController.m */,
+			);
+			path = MostEmailed;
+			sourceTree = "<group>";
+		};
+		0A532BE321E20DD700567552 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0A532BBD21E204F900567552 /* TabBarController.h */,
+				0A532BBE21E204F900567552 /* TabBarController.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		0A532BE421E20E3F00567552 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A532BDF21E2098900567552 /* Constants.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0A532BE521E20E5C00567552 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0A532BC021E204F900567552 /* Main.storyboard */,
+				0A532BC821E204FA00567552 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0A532BE621E20EF800567552 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A532BEC21E211C400567552 /* EmailedModel.h */,
+				0A532BED21E211C400567552 /* EmailedModel.m */,
+				0A532C0621E2539900567552 /* EmailedMediaModel.h */,
+				0A532C0721E2539900567552 /* EmailedMediaModel.m */,
+				0A7B201E21E48CCC0023CC09 /* EmailedMediaMetadataModel.h */,
+				0A7B201F21E48CCC0023CC09 /* EmailedMediaMetadataModel.m */,
+				0A52D0D321E387B8009ACAC6 /* ViewedModel.h */,
+				0A52D0D421E387B8009ACAC6 /* ViewedModel.m */,
+				0A7B202821E4CDCF0023CC09 /* ViewedMediaModel.h */,
+				0A7B202921E4CDCF0023CC09 /* ViewedMediaModel.m */,
+				0A7B202B21E4CECB0023CC09 /* ViewedMediaMetadataModel.h */,
+				0A7B202C21E4CECB0023CC09 /* ViewedMediaMetadataModel.m */,
+				0A52D0DB21E3A8FA009ACAC6 /* SharedModel.h */,
+				0A52D0DC21E3A8FA009ACAC6 /* SharedModel.m */,
+				0A7B202E21E4D0AD0023CC09 /* SharedMediaModel.h */,
+				0A7B202F21E4D0AD0023CC09 /* SharedMediaModel.m */,
+				0A7B203121E4D0DA0023CC09 /* SharedMediaMetadataModel.h */,
+				0A7B203221E4D0DA0023CC09 /* SharedMediaMetadataModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0A532BF421E21FEB00567552 /* MostShared */ = {
+			isa = PBXGroup;
+			children = (
+				0A532BFA21E2226B00567552 /* SharedListController.h */,
+				0A532BFB21E2226B00567552 /* SharedListController.m */,
+				0A532BF521E2203500567552 /* SharedCell.h */,
+				0A532BF621E2203500567552 /* SharedCell.m */,
+				0A52D0DE21E3AA19009ACAC6 /* SharedDetailedController.h */,
+				0A52D0DF21E3AA19009ACAC6 /* SharedDetailedController.m */,
+			);
+			path = MostShared;
+			sourceTree = "<group>";
+		};
+		0A532BFF21E22AF400567552 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				0A532BD721E2081C00567552 /* FavoritesListController.xib */,
+				0A52D0E521E3AC7A009ACAC6 /* FavoritesCell.xib */,
+				0A52D0EA21E3ACA2009ACAC6 /* FavoritesDetailedController.xib */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		0A532C0021E22B0F00567552 /* Emailed */ = {
+			isa = PBXGroup;
+			children = (
+				0A532BDC21E2086F00567552 /* EmailedListController.xib */,
+				0A532BE921E2113400567552 /* EmailedCell.xib */,
+				0A532BF121E2128600567552 /* EmailedDetailedController.xib */,
+			);
+			path = Emailed;
+			sourceTree = "<group>";
+		};
+		0A532C0121E22B2200567552 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0A532BFC21E2226B00567552 /* SharedListController.xib */,
+				0A532BF721E2203500567552 /* SharedCell.xib */,
+				0A52D0E021E3AA19009ACAC6 /* SharedDetailedController.xib */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0A532C0221E22B3500567552 /* Viewed */ = {
+			isa = PBXGroup;
+			children = (
+				0A52D0CB21E384E4009ACAC6 /* ViewedListController.xib */,
+				0A52D0D021E38610009ACAC6 /* ViewedCell.xib */,
+				0A52D0D821E38835009ACAC6 /* ViewedDetailedController.xib */,
+			);
+			path = Viewed;
+			sourceTree = "<group>";
+		};
+		88BD329A7A70F019A340D0EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DA531210F1506807C7F1797 /* libPods-NewYorkTimesApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA2D1A45445FA11364849877 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7659C32CE214DE99F96BE7B /* Pods-NewYorkTimesApp.debug.xcconfig */,
+				110A26F23C75321E54CD65D3 /* Pods-NewYorkTimesApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +383,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A532BD021E204FA00567552 /* Build configuration list for PBXNativeTarget "NewYorkTimesApp" */;
 			buildPhases = (
+				4608AE3448F7EB0D5884C731 /* [CP] Check Pods Manifest.lock */,
 				0A532BB321E204F900567552 /* Sources */,
 				0A532BB421E204F900567552 /* Frameworks */,
 				0A532BB521E204F900567552 /* Resources */,
@@ -133,21 +436,82 @@
 			files = (
 				0A532BCA21E204FA00567552 /* LaunchScreen.storyboard in Resources */,
 				0A532BC721E204FA00567552 /* Assets.xcassets in Resources */,
+				0A52D0D221E38610009ACAC6 /* ViewedCell.xib in Resources */,
 				0A532BC221E204F900567552 /* Main.storyboard in Resources */,
+				0A532BDE21E2086F00567552 /* EmailedListController.xib in Resources */,
+				0A52D0EC21E3ACA2009ACAC6 /* FavoritesDetailedController.xib in Resources */,
+				0A52D0DA21E38835009ACAC6 /* ViewedDetailedController.xib in Resources */,
+				0A532BEB21E2113400567552 /* EmailedCell.xib in Resources */,
+				0A532BD921E2081C00567552 /* FavoritesListController.xib in Resources */,
+				0A532BF921E2203500567552 /* SharedCell.xib in Resources */,
+				0A52D0CD21E384E4009ACAC6 /* ViewedListController.xib in Resources */,
+				0A532BFE21E2226B00567552 /* SharedListController.xib in Resources */,
+				0A52D0E221E3AA19009ACAC6 /* SharedDetailedController.xib in Resources */,
+				0A532BF321E2128600567552 /* EmailedDetailedController.xib in Resources */,
+				0A52D0E721E3AC7A009ACAC6 /* FavoritesCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4608AE3448F7EB0D5884C731 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewYorkTimesApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A532BB321E204F900567552 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A532BBF21E204F900567552 /* ViewController.m in Sources */,
+				0A532BF821E2203500567552 /* SharedCell.m in Sources */,
+				0A532BFD21E2226B00567552 /* SharedListController.m in Sources */,
+				0A52D0E121E3AA19009ACAC6 /* SharedDetailedController.m in Sources */,
+				0A532BDD21E2086F00567552 /* EmailedListController.m in Sources */,
+				0A52D0EB21E3ACA2009ACAC6 /* FavoritesDetailedController.m in Sources */,
+				0A52D0E621E3AC7A009ACAC6 /* FavoritesCell.m in Sources */,
+				0A7B203021E4D0AD0023CC09 /* SharedMediaModel.m in Sources */,
+				0A52D0F121E3B1B4009ACAC6 /* NewsEntry+CoreDataClass.m in Sources */,
+				0A532BBF21E204F900567552 /* TabBarController.m in Sources */,
+				0A532C0821E2539900567552 /* EmailedMediaModel.m in Sources */,
+				0A7B203321E4D0DA0023CC09 /* SharedMediaMetadataModel.m in Sources */,
+				0A7B202D21E4CECB0023CC09 /* ViewedMediaMetadataModel.m in Sources */,
+				0A532BF221E2128600567552 /* EmailedDetailedController.m in Sources */,
+				0A532BEE21E211C400567552 /* EmailedModel.m in Sources */,
+				0A7B202A21E4CDCF0023CC09 /* ViewedMediaModel.m in Sources */,
+				0A52D0D921E38835009ACAC6 /* ViewedDetailedController.m in Sources */,
+				0A52D0F521E3B1D0009ACAC6 /* DataManager.m in Sources */,
 				0A532BBC21E204F900567552 /* AppDelegate.m in Sources */,
 				0A532BCD21E204FA00567552 /* main.m in Sources */,
-				0A532BC521E204F900567552 /* NewYorkTimesApp.xcdatamodeld in Sources */,
+				0A52D0F221E3B1B4009ACAC6 /* NewsEntry+CoreDataProperties.m in Sources */,
+				0A532BC521E204F900567552 /* DataModel.xcdatamodeld in Sources */,
+				0A7B202021E48CCC0023CC09 /* EmailedMediaMetadataModel.m in Sources */,
+				0A532BD821E2081C00567552 /* FavoritesListController.m in Sources */,
+				0A52D0D121E38610009ACAC6 /* ViewedCell.m in Sources */,
+				0A52D0D521E387B9009ACAC6 /* ViewedModel.m in Sources */,
+				0A532BEA21E2113400567552 /* EmailedCell.m in Sources */,
+				0A52D0DD21E3A8FA009ACAC6 /* SharedModel.m in Sources */,
+				0A52D0CC21E384E4009ACAC6 /* ViewedListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +588,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -277,7 +641,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,11 +651,13 @@
 		};
 		0A532BD121E204FA00567552 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7659C32CE214DE99F96BE7B /* Pods-NewYorkTimesApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 595Y7XNND7;
 				INFOPLIST_FILE = NewYorkTimesApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +670,13 @@
 		};
 		0A532BD221E204FA00567552 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 110A26F23C75321E54CD65D3 /* Pods-NewYorkTimesApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 595Y7XNND7;
 				INFOPLIST_FILE = NewYorkTimesApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,13 +711,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0A532BC321E204F900567552 /* NewYorkTimesApp.xcdatamodeld */ = {
+		0A532BC321E204F900567552 /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				0A532BC421E204F900567552 /* NewYorkTimesApp.xcdatamodel */,
 			);
 			currentVersion = 0A532BC421E204F900567552 /* NewYorkTimesApp.xcdatamodel */;
-			path = NewYorkTimesApp.xcdatamodeld;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

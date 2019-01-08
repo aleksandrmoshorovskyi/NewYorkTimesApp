@@ -7,8 +7,15 @@
 //
 
 #import "FavoritesListController.h"
+#import "DataManager.h"
+#import "FavoritesCell.h"
+#import "FavoritesDetailedController.h"
 
-@interface FavoritesListController ()
+@interface FavoritesListController () <UITableViewDataSource, UITableViewDelegate> {
+    NSArray *dataSource;
+}
+
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 @end
 
@@ -16,17 +23,49 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor magentaColor];
+    
+    UINib *nib = [UINib nibWithNibName:@"FavoritesCell" bundle:nil];
+    [self.tableView registerNib:nib forCellReuseIdentifier:@"FavoritesCellID"];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewWillAppear:(BOOL)animated {
+    [self fetchData];
 }
-*/
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    [self fetchData];
+    
+    return self;
+}
+
+- (void)fetchData {
+    dataSource = [[DataManager sharedInstance] fetchAllNotes];
+    [self.tableView reloadData];
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return dataSource.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    FavoritesCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FavoritesCellID"];
+    cell.model = dataSource[indexPath.row];
+    
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    FavoritesDetailedController *favoritesDetailedController = [[FavoritesDetailedController alloc] initWithNibName:@"FavoritesDetailedController" bundle:nil];
+    favoritesDetailedController.model = dataSource[indexPath.row];
+    [self.navigationController pushViewController:favoritesDetailedController animated:YES];
+}
 
 @end

@@ -10,4 +10,14 @@
 
 @implementation ViewedMediaModel
 
++ (JSONKeyMapper *)keyMapper {
+    return [[JSONKeyMapper alloc] initWithModelToJSONDictionary:@{@"type":@"type",
+                                                                  @"subtype":@"subtype",
+                                                                  @"caption":@"caption",
+                                                                  @"copyright":@"copyright",
+                                                                  @"approvedForSyndication":@"approvedForSyndication",
+                                                                  @"mediaMetadata":@"media-metadata"
+                                                                  }];
+}
+
 @end

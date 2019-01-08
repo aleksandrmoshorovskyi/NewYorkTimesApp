@@ -12,6 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmailedDetailedController">
             <connections>
+                <outlet property="newsImage" destination="oDt-0n-CdI" id="AOC-qi-iqP"/>
+                <outlet property="saveButton" destination="Zdh-cj-w7Q" id="XLo-jl-xvA"/>
+                <outlet property="textLable" destination="b9v-ty-GcQ" id="MBD-iw-cdo"/>
+                <outlet property="titleLable" destination="AYm-ZU-EAr" id="zKX-iz-td1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,8 +23,51 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="0.31023539970000003" blue="0.32189286449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYm-ZU-EAr">
+                    <rect key="frame" x="16" y="50" width="343" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdh-cj-w7Q">
+                    <rect key="frame" x="16" y="621" width="343" height="30"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                    <state key="normal" title="Add to favorites">
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="saveButtonClicked:" destination="-1" eventType="touchUpInside" id="3Vy-aM-Anq"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9v-ty-GcQ">
+                    <rect key="frame" x="16" y="86.5" width="343" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oDt-0n-CdI">
+                    <rect key="frame" x="16" y="123" width="343" height="482"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oDt-0n-CdI" firstAttribute="leading" secondItem="b9v-ty-GcQ" secondAttribute="leading" id="7Jw-tm-iec"/>
+                <constraint firstItem="oDt-0n-CdI" firstAttribute="top" secondItem="b9v-ty-GcQ" secondAttribute="bottom" constant="16" id="83O-Jp-fzh"/>
+                <constraint firstItem="AYm-ZU-EAr" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="Aoe-pp-jQS"/>
+                <constraint firstItem="Zdh-cj-w7Q" firstAttribute="leading" secondItem="oDt-0n-CdI" secondAttribute="leading" id="DkM-UY-be4"/>
+                <constraint firstItem="AYm-ZU-EAr" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="Fog-8C-h9B"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Zdh-cj-w7Q" secondAttribute="bottom" constant="16" id="Pma-rD-BPu"/>
+                <constraint firstItem="b9v-ty-GcQ" firstAttribute="trailing" secondItem="AYm-ZU-EAr" secondAttribute="trailing" id="RI2-oJ-29U"/>
+                <constraint firstItem="b9v-ty-GcQ" firstAttribute="leading" secondItem="AYm-ZU-EAr" secondAttribute="leading" id="ZLZ-ws-bBU"/>
+                <constraint firstItem="Zdh-cj-w7Q" firstAttribute="top" relation="greaterThanOrEqual" secondItem="oDt-0n-CdI" secondAttribute="bottom" constant="16" id="prj-k4-0Or"/>
+                <constraint firstItem="b9v-ty-GcQ" firstAttribute="top" secondItem="AYm-ZU-EAr" secondAttribute="bottom" constant="16" id="usi-fF-KVl"/>
+                <constraint firstItem="Zdh-cj-w7Q" firstAttribute="trailing" secondItem="oDt-0n-CdI" secondAttribute="trailing" id="wdH-0D-Aav"/>
+                <constraint firstItem="AYm-ZU-EAr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xMz-tL-rSV"/>
+                <constraint firstItem="oDt-0n-CdI" firstAttribute="trailing" secondItem="b9v-ty-GcQ" secondAttribute="trailing" id="xvT-wy-d9X"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
         </view>
     </objects>
 </document>
