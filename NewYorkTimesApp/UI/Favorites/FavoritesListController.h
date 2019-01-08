@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FavoritesListController.h
 //  NewYorkTimesApp
 //
 //  Created by Aleksandr Moroshovskyi on 1/6/19.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface FavoritesListController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
